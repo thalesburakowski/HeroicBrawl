@@ -8,8 +8,7 @@ const port = process.env.port || 3000
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
-    res.render('index.ejs')
-})
+const routes = require('./routes') // ele pega o index.js por padrão
+app.use(routes)
 
 app.listen(port, () => console.log("Running..."))

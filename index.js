@@ -6,7 +6,7 @@ const port = process.env.port || 3000
 // app.use(bodyParser.urlencoded())
 
 app.set('view engine', 'ejs')
-app.use(express.static('public'))
+app.use(express.static('/views'))
 
 const routes = require('./routes') // ele pega o index.js por padrão
 app.use(routes)

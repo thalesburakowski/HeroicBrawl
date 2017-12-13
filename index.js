@@ -11,8 +11,6 @@ app.use(express.static(__dirname + '/views'))
 const routes = require('./routes') // ele pega o index.js por padrão
 app.use(routes)
 
-app.use(express.static(__dirname + '/views'))
-
 require('./services/passport')
 require('./routes/authRoutes')(app)
 

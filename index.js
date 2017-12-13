@@ -13,4 +13,7 @@ app.use(routes)
 
 app.use(express.static(__dirname + '/views'))
 
+require('./services/passport')
+require('./routes/authRoutes')(app)
+
 app.listen(port, () => console.log("Running..."))

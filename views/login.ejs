@@ -1,25 +1,14 @@
 <% include elements/header %>
-        <div id="login-box">
-            <div id="login-box-interno">
-                <div id="login-box-label">
-                    Login
-                </div>
-
-                <div class="input-div" id="input-user">
-                    <input type="text" placeholder="Usuário ou E-mail">
-                </div>
-
-                <div class="input-div" id="input-password">
-                        <input type="password" placeholder="Senha">
-                </div>
-
-                <div id="botoes">
-                    <div id="botao">Login</div>
-                    <div id="lembrar-senha"><input type="checkbox"/> Lembrar minha senha </div>
-                </div>
-            </div>
-        </div>
-        <div id="esqueceu-senha">
-            <b>Esqueceu a senha?</b> Clique aqui para enviar por email.
-        </div>
+<div class="loginBox">
+    <img src="https://lh3.googleusercontent.com/-6KdjS8BAr0c/AAAAAAAAAAI/AAAAAAAAABE/vWUbL7nhNGk/photo.jpg?sz=50" class="user">
+    <h2>Login</h2>
+    <form>
+        <p>Email</p>
+        <input type="text" name="" placeholder="Digite o Email">
+        <p>Senha</p>
+        <input type="password" name="" placeholder="Digite a Senha">
+        <input type="submit" name="" value="Entrar">
+        <a href="#">Esqueceu a senha</a>
+    </form>
+</div>
 <% include elements/footer %>

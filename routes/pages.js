@@ -13,4 +13,6 @@ app.get('/shop', pages.shop)
 
 app.get('/updates', pages.updates)
 
+app.get('/login', pages.login)
+
 module.exports = app

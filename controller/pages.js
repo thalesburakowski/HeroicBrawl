@@ -22,4 +22,8 @@ const updates = (req, res) => {
     res.render('updates')
 }
 
-module.exports = {news, community, galery, materials, shop, updates}
+const login = (req, res) => {
+    res.render('login')
+}
+
+module.exports = {news, community, galery, materials, shop, login}

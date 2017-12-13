@@ -1,3 +1,38 @@
 body{
     background-color: #11a6d4;
 }
+
+#login-box{
+    background-color: #1992b7;
+    width: 380px;
+    height: 260px;
+    margin: 140px auto 0px;
+    border-radius: 5px;
+}
+
+#login-box-interno{
+    width: 360px;
+    height: 240px;
+    background-color: white;
+    position: absolute;
+    margin:10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    overflow: hidden;
+}
+
+#login-box-label{
+    height: 45px;
+    text-align: center;
+    font: bold 14px/45px sans-serif;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+    border-bottom: 1px solid #bfc3c5;
+    box-shadow: 1px 0px 3px #dedede;
+    color: #555555;
+}

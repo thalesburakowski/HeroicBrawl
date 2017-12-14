@@ -86,3 +86,9 @@ h2{
     font-weight: bold;
     text-decoration: none;
 }
+
+.loginBox a img{
+    widows: 210px;
+    height:60px;
+    border:0;
+}

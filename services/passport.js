@@ -3,8 +3,19 @@ const GoogleStrategy = require("passport-google-oauth20").Strategy
 const mongoose = require('mongoose')
 const keys = require('../config/keys')
 
-// acess the model of users that it already have been created
+// access the model of users that it already have been created
 const User = mongoose.model('users')
+
+passport.serializeUser((user,done) =>{
+    done(null, user.id)
+})
+
+// parameter: id -> the user.id from serializeUser
+passport.deserializeUser((id, done) =>{
+    User.findById(id).then(user => {
+            done(null, user)
+        })
+})
 
 passport.use(
     new GoogleStrategy({
@@ -28,6 +39,6 @@ passport.use(
         })
 
     
-})) // Adiciona um novo tipo de estrategia pro passport
+})) // add a new type of strategy to passport 
 
-// não precisa exportar porque ele está esperando pra ser executado
+// don't need to export beucase it is waiting to be executed

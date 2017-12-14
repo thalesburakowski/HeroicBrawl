@@ -14,10 +14,18 @@ passport.use(
 }, (acessToken, refreshToken, profile, done) =>{
     
     console.log('Profile: ', profile)
+    User.findOne({ googleId: profile.id})
+        .then(existingUser =>{
+            if(existingUser){
+                // profile already exists
+            }else{
+                new User({googleId: profile.id,
+                    name: profile.name.givenName,
+                    lastName: profile.name.familyName}).save()
+            }
+        })
+
     
-    new User({googleId: profile.id,
-         name: profile.name.givenName,
-         lastName: profile.name.familyName}).save()
 })) // Adiciona um novo tipo de estrategia pro passport
 
 // não precisa exportar porque ele está esperando pra ser executado

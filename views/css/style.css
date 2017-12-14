@@ -32,7 +32,7 @@ body{
 h2{
     margin: 0;
     padding: 0 0 20px;
-    color: #33050d;
+    color: #ff0000;
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ h2{
     margin: 0;
     padding: 0;
     font-weight: bold;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .loginBox input{
@@ -61,7 +61,7 @@ h2{
 }
 
 ::placeholder{
-    color: rgba(255, 255,255,.5);
+    color: rgb(196, 196, 196);
 }
 
 .loginBox input[type="submit"]{
@@ -70,14 +70,14 @@ h2{
     height: 40px;
     color: #fff;
     font-size: 16px;
-    background: #33050d;
+    background: rgb(153,153,153);
     cursor: pointer;
     border-radius: 20px;
 }
 
 .loginBox input[type="submit"]:hover{
-    background: #33050d;
-    color: #262626;
+    background: #414141;
+    color: #ffffff;
 }
 
 .loginBox a{
@@ -85,5 +85,4 @@ h2{
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    
 }

@@ -92,3 +92,33 @@ h2{
     height:60px;
     border:0;
 }
+
+ul{
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    background: rgb(80, 162, 238);
+    margin-top: 8%;
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    width: 225px;
+    font-size: 20px;
+    transition: 0.9s;
+}
+
+li a:hover{
+    background: lightblue;
+    color:black;
+}

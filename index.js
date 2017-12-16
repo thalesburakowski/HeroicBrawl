@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.port || 3000
+const port = process.env.port || 5000
 
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/views'))
@@ -14,6 +14,7 @@ const keys = require('./config/keys')
 mongoose.connect(keys.mongoURI)
 require('./models/user')
 
+// maybe we need to use express-session
 const cookieSession = require('cookie-session')
 const passport = require('passport')
 

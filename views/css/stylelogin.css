@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(https://i.pinimg.com/originals/f2/5d/2e/f25d2e0290c8403d1423b4359b5b4abd.jpg);
     background-size: cover;
     font-family: sans-serif;
 
@@ -88,7 +87,11 @@ h2{
 }
 
 .loginBox a img{
-    widows: 210px;
+    width: 300px;
+    margin-bottom: 20px;
     height:60px;
-    border:0;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    left: calc(50% - 50px); 
 }

@@ -1,9 +1,36 @@
 {
   "dependencies": {
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "mongoose": "^4.13.7",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"
-  }
+  },
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "name": "heroicbrawl",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thalesburakowski/HeroicBrawl.git"
+  },
+  "keywords": [
+    "RPG",
+    "nodejs"
+  ],
+  "author": "Thales Vinícius, Rubens Pio, Victor de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thalesburakowski/HeroicBrawl/issues"
+  },
+  "homepage": "https://github.com/thalesburakowski/HeroicBrawl#readme"
 }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { connect } from 'react-redux'
-import * as actions from '../actions'
+//import * as actions from '../actions/'
 
 const Header = () => <h2>Header</h2>
 const DashBoard = () => <h2>DashBoard</h2>
 const SurveyNew = () => <h2>SurveyNew</h2>
 const Landing = () => <h2>Landing</h2>
 
-class App extends Component {
+export default class App extends Component {
 	componentDidMount() {
 		this.props.fetchUser();
 	}
@@ -29,4 +29,4 @@ class App extends Component {
 	}
 }
 
-export default connect(null, actions)(App)
+//export default connect(null, actions)(App)

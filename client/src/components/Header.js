@@ -11,4 +11,4 @@ class Header extends Comment{
 			</nav>
 		)
 	}
-}
+} 

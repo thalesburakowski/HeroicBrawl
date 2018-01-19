@@ -2,12 +2,6 @@ const express = require('express')
 const app = express()
 const port = process.env.port || 5000
 
-app.set('view engine', 'ejs')
-app.use(express.static(__dirname + '/views'))
-
-const routes = require('./routes') // ele pega o index.js por padrão
-app.use(routes)
-
 // mongoDB
 const mongoose = require('mongoose')
 const keys = require('./config/keys')

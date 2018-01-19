@@ -6,7 +6,7 @@ class Home extends Component {
       // escrever o código aqui
       <section>
         <div>
-          <h1>Olá Aventureiros</h1>
+          <h2>Olá Aventureiros</h2>
         </div>
 
       </section>

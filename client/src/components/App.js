@@ -19,7 +19,6 @@ export default class App extends Component {
 
 	render() {
 		return (
-			<div>
 				<BrowserRouter>
 					<div>
 						<Header />
@@ -32,7 +31,6 @@ export default class App extends Component {
 						<Route exact path='/Login' component={Login}/>
 					</div>
 				</BrowserRouter>
-			</div>
 		)
 	}
 }

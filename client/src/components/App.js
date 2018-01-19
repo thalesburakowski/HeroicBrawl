@@ -4,9 +4,13 @@ import { connect } from 'react-redux'
 //import * as actions from '../actions/'
 
 import Header from './Header'
-const DashBoard = () => <h2>DashBoard</h2>
-const SurveyNew = () => <h2>SurveyNew</h2>
-const Landing = () => <h2>Landing</h2>
+import Home from './Home'
+import News from './News'
+import Community from './Community'
+import Gallery from './Gallery'
+import Collection from './Collection'
+import Shop from './Shop'
+import Login from './Login'
 
 export default class App extends Component {
 	componentDidMount() {
@@ -19,9 +23,13 @@ export default class App extends Component {
 				<BrowserRouter>
 					<div>
 						<Header />
-						<Route exact path="/" component={Landing} />
-						<Route exact path="/surveys" component={DashBoard} />
-						<Route path="/surveys/new" component={SurveyNew} />
+						<Route exact path='/' component={Home}/>
+						<Route exact path='/News' component={News}/>
+						<Route exact path='/Community' component={Community}/>
+						<Route exact path='/Gallery' component={Gallery}/>
+						<Route exact path='/Collection' component={Collection}/>
+						<Route exact path='/Shop' component={Shop}/>
+						<Route exact path='/Login' component={Login}/>
 					</div>
 				</BrowserRouter>
 			</div>

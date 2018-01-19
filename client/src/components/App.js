@@ -10,7 +10,7 @@ const Landing = () => <h2>Landing</h2>
 
 export default class App extends Component {
 	componentDidMount() {
-		this.props.fetchUser();
+	
 	}
 
 	render() {

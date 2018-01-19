@@ -8,7 +8,6 @@ class Home extends Component {
         <div>
           <h2>Olá Aventureiros</h2>
         </div>
-
       </section>
     )
   }
